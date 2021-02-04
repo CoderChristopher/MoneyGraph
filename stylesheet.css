@@ -1,0 +1,128 @@
+body{
+	background: #a8a8a8;
+}
+@keyframes fade-in{
+	from{
+		opacity:0;
+	}
+	to{
+		opacity:1;
+	}
+}
+@keyframes fade-out{
+	from{
+		opacity:1;
+	}
+	to{
+		opacity:0;
+	}
+}
+@keyframes fly-left{
+	from{
+	transform:translate(-100px);
+	};
+	to{  
+	transform:translate(0px);
+	};
+}
+@keyframes fly-right{
+	from{
+	transform:translate(100px);
+	};
+	to{  
+	transform:translate(0px);
+	};
+}
+@keyframes fly-up{
+	from{
+	transform:translate(0px,-100px);
+	};
+	to{  
+	transform:translate(0px,0px);
+	};
+}
+@keyframes fly-down{
+	from{
+	transform:translate(0px,100px);
+	};
+	to{  
+	transform:translate(0px,0px);
+	};
+}
+.left{
+animation: fly-left 1.0625s, fade-in 1s;
+}
+.right{
+animation: fly-right 1.0625s, fade-in 1s;
+}
+.up{
+animation: fly-up 1.0625s, fade-in 1s;
+}
+.down{
+animation: fly-down 1.0625s, fade-in 1s;
+}
+*{
+animation: fade-in .5s;
+}
+h1{
+	cursor: default;
+	font: verdana;
+	font-size: 18pt;
+	font-style: bold;
+	float: left top;
+}
+h2{
+	font: verdana;
+	font-size: 36pt;
+}
+h3{
+	font-style: italic;
+	cursor: default;
+	font: verdana;
+	font-size: 24pt;
+	color: #010101;
+}
+p{
+	cursor: default;
+	font-size: 18pt;
+	color: #585858;
+}
+.cell{
+	cursor: pointer;
+	border:solid black 2px;
+	margin-top:1%;
+	margin-bottom:1%;
+	border-radius: 16px 0px 16px 0px;
+	box-shadow: #707070 3px 3px 3px;
+	background: white;
+	color: grey;
+	float:left;
+	width:100%;
+	min-height:60%;
+	text-align: center;
+	overflow: hidden;
+}
+.table{
+	margin-left:10%;
+	width:85%;
+	height:40%;
+}
+.hover:hover{
+	background: #f4f4f4 !important;
+	box-shadow: #707070 6px 6px 6px;
+}
+footer{
+	position:fixed;
+	left:0;
+	bottom:0;
+	padding:1%;
+	text-align:center;
+	background: #686868;
+	width:100%;
+	margin: 0 auto;
+}
+a{
+	cursor: pointer;
+	text-decoration: none;
+	color: black;
+}
